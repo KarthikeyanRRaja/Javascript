@@ -1,0 +1,25 @@
+<html>
+<body>
+<!--<button onclick="play()" value="play/pause" >-->
+
+<script>
+var my=document.getElementById("i");
+function playi()
+{
+if(my.paused)
+my.play();
+else
+my.pause();
+}
+</script>
+<audio controls id="i">
+<source src="song.mp3"  type="audio/mpeg" >
+</audio>
+<div>
+<input type="file">
+<input type="button" value="play" onClick="playi()">
+<input type="button" value="pause">
+<input type="button" value="stop">
+</div>
+</body>
+</html>

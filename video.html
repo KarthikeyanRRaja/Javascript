@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+body
+{
+background-color:yellow;
+}
+h1
+{
+color:red;
+}
+title
+{
+font-size:22;
+color:red;
+}
+
+</style>
+</head>
+<body>
+<center><h1>My Drums Videos</h1>
+<h2>Solo</h2><div style:"text-align:center">
+<button onClick="play()">Play/Pause</button>
+<video width="420" id="k" title="My First Solo"><source src="solo.mp4" type="video/mp4"></video>
+</div>
+<h2>Djembe</h2><div style:"text-align:right">&nbsp;&nbsp;&nbsp;&nbsp;
+<button onClick="playi()">Play/Pause</button>
+<video width="220" id="d" title="Djembe"><source src="djembe.mp4" type="video/mp4"></video>
+</div>
+<h2>College Folk</h2><div style:"text-align:right"><br>
+<button onClick="playii()">Play/Pause</button>
+<video id="cf" width="280" title="College Folk"><source src="cf.mp4" type="video/mp4"></video>
+</div>
+<h2>Folk</h2><div style:"text-align:right"><br><br>
+<button onClick="playiii()">Play/Pause</button>
+<video width="280" id="f" ><source src="folk.mp4" type="video/mp4"></video>
+</div>
+
+
+
+<script>
+var my=document.getElementById("k");
+function play()
+{
+if(my.paused)
+my.play();
+else
+my.pause();
+}
+var myd=document.getElementById("d");
+function playi()
+{
+if(myd.paused)
+myd.play();
+else
+myd.pause();
+}
+var myc=document.getElementById("cf");
+function playii()
+{
+if(myc.paused)
+myc.play();
+else
+myc.pause();
+}
+var myf=document.getElementById("f");
+function playiii()
+{
+if(myf.paused)
+myf.play();
+else
+myf.pause();
+}
+
+
+</script>
+</body>
+</html>
