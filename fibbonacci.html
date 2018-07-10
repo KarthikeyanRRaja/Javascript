@@ -1,0 +1,24 @@
+<html>
+<body>
+<center>
+<h1>JavaScript Program to perform Fibbonacci Series</h1>
+<script>
+var i,fibb=0,fibb1=1,c,n;
+n=prompt("Enter the value");
+
+function kar()
+{document.write(fibb+"<br>");
+document.write(fibb1);
+for(i=0;i<n;i++)
+{
+c=fibb+fibb1;
+fibb=fibb1;
+fibb1=c;
+document.write("<br>"+c);
+}
+}
+</script>
+<button onclick="kar()" >Finnacci Series</button>
+</center>
+</body>
+</html>
